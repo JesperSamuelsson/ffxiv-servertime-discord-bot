@@ -1,0 +1,9 @@
+services:
+  ffxivservertime:
+    build:
+      context: .
+    container_name: ffxivservertime
+    environment:
+      NODE_ENV: production
+      TOKEN: ${DISCORD_TOKEN}
+    restart: always
